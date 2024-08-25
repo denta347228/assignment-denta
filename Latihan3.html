@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.4/css/dataTables.dataTables.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <!-- Carousel content goes here -->
+    </div>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- Tambahkan ms-auto di sini -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Inventory</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary btn-sm" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+
+
+    <div class="container-3" id="" >
+        <div class="row" >
+            <div class="col-4">
+                <!-- <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="github.svg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">Denta Mustofa</h3>
+                  <p class="card-title">Front End Designer</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+                <center><img src="github.svg" alt="" class="w-50 "></center>
+
+            </div>
+            <div class="col-4 my-auto d-block border-end ">
+                <h4 id="datanama">Denta Mustofa</h4>
+                <p id="Role-1"> Front End Designer</p>
+                <button class="btn btn-primary btn-sm" type="submit">Kontak</button>
+                <button class="btn btn-outline-success btn-sm" type="submit">Resume</button>
+            </div>
+            <div class="col-4 my-auto d-block px-3">
+                <strong><label for="floatingInput">Avaibility : </label></strong>
+                <label id="avaibility">Full-Time</label>
+                <br>
+                <strong><label for="floatingInput">Usia : </label></strong>
+                <label id="age">24</label>
+                <br>
+                <strong><label id="" for="floatingInput">Lokasi : </label></strong>
+                <label id="tempat">Jakarta</label>
+                <br>
+                <strong><label for="floatingInput">Year Experience : </label></strong>
+                <label id="pengalaman">4</label>
+                <br>
+                <strong><label for="floatingInput">Email : </label>dentamustofa625@gmail.com</strong>
+                <label id="email"></label>
+                <br>
+            </div>
+        </div>
+<!-- <?php
+
+// $nama = $_GET['nama'];
+// $alamat = $_GET['alamat'];
+
+// if($nama){
+//     echo $nama;
+// }else if ($alamat){
+//     echo $alamat;
+// }
+
+?> -->
+
+        <!-- form 2 -->
+        <div class="container">
+            <form>
+                <div class="mb-7">
+                    <label for="inputNama" class="form-label">Nama</label>
+                    <input type="" class="form-control" id="inputNama" aria-describedby="" placeholder="Masukan Nama Lengkap">
+                    <div id="emailHelp" class="form-text">Masukin yang bener woi.</div>
+                </div>
+                <div class="mb-7">
+                    <label for="inputRole" class="form-label">Role</label>
+                    <input type="text" class="form-control" id="inputRole" placeholder="Masukan Role Kemampuan yang dimiliki">
+                </div>
+                <div class="mb-7">
+                    <label for="inputKesediaan" class="form-label">Avaibility</label>
+                    <input type="text" class="form-control" id="inputKesediaan" placeholder="Keterangan Kesediaan waktu">
+                </div>
+                <div class="mb-7">
+                    <label for="inputUmur" class="form-label">Age</label>
+                    <input type="number" class="form-control" id="inputUmur" placeholder="Berapa Usia Anda Sekarang">
+                </div>
+                <div class="mb-7">
+                    <label for="inputLokasi" class="form-label">Lokasi</label>
+                    <input type="text" class="form-control" id="inputLokasi" placeholder="Domisili anda sekarang dimana">
+                </div>
+                <div class="mb-7">
+                    <label for="inputPengalaman" class="form-label">Year Experiance</label>
+                    <input type="number" class="form-control" id="inputPengalaman" placeholder="Sudah Berapa Lama Pengalaman Kerja Anda">
+                </div>
+                <div class="mb-7">
+                    <label for="inputemail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputemail" placeholder="Masukan Email Yang Aktif ">
+                </div>
+                <br>
+            </form>
+            <button type="submit" id="submit" class="btn btn-success w-100">Submit</button>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!--link boostrap  -->
+            <script src="https://cdn.datatables.net/2.1.4/js/dataTables.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <!--link js untuk serch  -->
+
+            <script>
+                let table = new DataTable('#myTable');
+            </script>
+        </div>
+
+        <script language="javascript" type="text/javascript">
+            // var Nama = "Denta Mustofa";
+            // var age = 23;
+            // var Lokasi = "Jakarta";
+            // var Avaibility= "full Time";
+            // var Pengalaman = 3;
+            // var email= "dentamustofa625@gmail.com";
+
+            // console.log(Nama);
+            // console.log(age);
+            // console.log(Lokasi);
+            // console.log(Avaibility);
+            // console.log(Pengalaman);
+            // console.log(email);
+
+            // var datanama= document.getElementById('datanama').innerHTML = Nama;
+            // document.getElementById('age').innerHTML = age;
+            // document.getElementById('Lokasi').innerHTML = Lokasi;
+            // document.getElementById('Avaibility').innerHTML = Avaibility;
+            // document.getElementById('Pengalaman').innerHTML = Pengalaman;
+            // document.getElementById('email').innerHTML = email;
+            function alertError() {
+        Swal.fire({
+            icon: "Masukan data dengan benar",
+            title: "Periksa kembali",
+            text: "Terdapat data yang kosong!"
+        });
+    }
+    
+
+            
+    $(document).ready(function () {
+    $("#submit").click(function () {
+        // Ambil nilai dari input
+        var Nama = $("#inputNama").val();
+        var Role = $("#inputRole").val();
+        var Kesediaan = $("#inputKesediaan").val();
+        var Tempat = $("#inputLokasi").val();
+        var Umur = $("#inputUmur").val();
+        var Pengalaman = $("#inputPengalaman").val();
+        var email = $("#inputemail").val();
+
+        // Validasi jika ada kolom yang kosong
+        if (Nama === "" || Role === "" || Kesediaan === "" || Umur === "" || Tempat === "" || Pengalaman === "" || email === "") {
+            alertError();
+            return; // Hentikan eksekusi jika ada yang kosong
+        }
+
+        // Mengisi data pada bagian profil jika validasi berhasil
+        $('#datanama').html(Nama);
+        $('#age').html(Umur);
+        $('#Role-1').html(Role);
+        $('#avaibility').html(Kesediaan);
+        $('#tempat').html(Tempat);
+        $('#pengalaman').html(Pengalaman);
+        $('#email').html(email);
+    });
+});
+
+          
+    
+    
+        </script>
+</body>
+
+</html>
